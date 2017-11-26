@@ -12,13 +12,13 @@ So, if we try to create the table City before the creation of Country then, the 
 
 So, the class sorts the tables: First dumps Country then City.
 
-
+# Example
 ````
 $backupClass=new BackupMysql();
 echo $backupClass->GenerateDump($host, $user, $password, $schema);
 ````
 
-#Class Structure
+# Class Structure  
 
 ## GenerateDump($host, $user, $password, $schema)     
 Generates a dump of the database. 
@@ -32,3 +32,7 @@ drop a table if exists.
 Indicates if we should dump all tables or only specific ones    
 ## field $insertEvery=500; (optional)   
 insert query every "n" number of rows.  
+
+# Todo
+
+Dump functions,views, store procedure and triggers
