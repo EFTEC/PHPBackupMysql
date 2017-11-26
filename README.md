@@ -37,3 +37,12 @@ insert query every "n" number of rows.
 
 * Dump functions,views, store procedure and triggers  
 * Check circular reference, if any.
+
+## differences with the fork
+
+* Class in uppercase.
+* method with a different name
+* Output simmilar to MysqlDump.
+* NULL fields.
+* lock tables
+* Lots of fixes.
