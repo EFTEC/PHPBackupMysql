@@ -17,3 +17,18 @@ So, the class sorts the tables: First dumps Country then City.
 $backupClass=new BackupMysql();
 echo $backupClass->GenerateDump($host, $user, $password, $schema);
 ````
+
+#Class Structure
+
+## GenerateDump($host, $user, $password, $schema)     
+Generates a dump of the database. 
+
+
+## field $lockTable = true; (optional) 
+Lock all tables before dumping them. The tables are locked with READ.  
+## field $dropTable = true; (optional)   
+drop a table if exists.  
+## field $filterTables = array(); (optional)   
+Indicates if we should dump all tables or only specific ones    
+## field $insertEvery=500; (optional)   
+insert query every "n" number of rows.  
